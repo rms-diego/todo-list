@@ -1,0 +1,45 @@
+@import "../../styles/global.scss";
+
+.inputContainer {
+  margin: -1.6rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 0.37rem;
+
+  input {
+    width: 39.8rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: $gray-500;
+    color: $gray-300;
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 2px $dark-purple;
+    }
+  }
+
+  button {
+    width: 5.6rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: $dark-blue;
+    color: $gray-100;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: 0.4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}
