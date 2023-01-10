@@ -1,0 +1,14 @@
+@import "../../global.scss";
+
+.headerContainer {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray-700;
+
+  img {
+    width: 7.9rem;
+    height: 3rem;
+  }
+}
