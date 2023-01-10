@@ -28,3 +28,9 @@ $danger: #e25858;
 body {
   background-color: $gray-600;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
