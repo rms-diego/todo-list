@@ -1,0 +1,58 @@
+@import "../../styles/global.scss";
+
+.taskContainer {
+  margin-top: 5.6rem;
+  width: 100%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    .createdTask {
+      color: $blue;
+      font-weight: 700;
+    }
+
+    .concludeTask {
+      color: $purple;
+      font-weight: 700;
+    }
+
+    span {
+      width: 1.5rem;
+      height: 1.1rem;
+      color: $gray-200;
+      background-color: $gray-400;
+      padding: 0.2rem;
+      border-radius: 50%;
+    }
+  }
+
+  .taskContentContainer {
+    display: flex;
+    height: 15.25rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-top: 1px solid $gray-500;
+    border-radius: 8px;
+
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    p {
+      font-weight: 700;
+      color: $gray-300;
+      line-height: 140%;
+    }
+
+    span {
+      color: $gray-200;
+      font-weight: 400;
+    }
+  }
+}
