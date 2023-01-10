@@ -18,6 +18,11 @@ $danger: #e25858;
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px $dark-purple;
+  }
 }
 
 body {

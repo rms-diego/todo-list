@@ -14,11 +14,6 @@
     border-radius: 8px;
     background-color: $gray-500;
     color: $gray-300;
-
-    &:focus {
-      outline: 0;
-      box-shadow: 0 0 0 2px $dark-purple;
-    }
   }
 
   button {
