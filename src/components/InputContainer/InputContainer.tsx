@@ -1,5 +1,5 @@
 import styles from "./InputContainer.module.scss";
-import plusIcon from "../../assets/plus-icon.svg";
+import { Plus } from "phosphor-react";
 
 export function InputContainer() {
   return (
@@ -7,7 +7,7 @@ export function InputContainer() {
       <input type="text" placeholder="Adicione uma nova tarefa" />
       <button>
         Criar
-        <img src={plusIcon} />
+        <Plus />
       </button>
     </section>
   );
