@@ -3,7 +3,7 @@ import styles from "./styles/app.module.scss";
 import { Header } from "./components/Header/Header";
 import { InputContainer } from "./components/InputContainer/InputContainer";
 import { TaskContainer } from "./components/TaskContainer/TaskContainer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export interface ITasks {
   conclud: boolean;
@@ -13,10 +13,17 @@ export interface ITasks {
 export function App() {
   const [tasks, setTasks] = useState<ITasks[]>([]);
 
+  useEffect(() => {
+    const allTasksString = localStorage.getItem("tasks");
+
+    if (allTasksString) setTasks(JSON.parse(allTasksString));
+  }, []);
+
   const createNewTask = (content: string) => {
     const task = { conclud: false, content };
 
     setTasks([...tasks, task]);
+    localStorage.setItem("tasks", JSON.stringify([...tasks, task]));
   };
 
   const toggleTask = (content: string) => {
@@ -30,12 +37,14 @@ export function App() {
     });
 
     setTasks(toggleConcludTask);
+    localStorage.setItem("tasks", JSON.stringify(toggleConcludTask));
   };
 
   const deleteTask = (content: string) => {
     const filteredTasks = tasks.filter((task) => task.content !== content);
 
     setTasks(filteredTasks);
+    localStorage.setItem("tasks", JSON.stringify(filteredTasks));
   };
 
   return (

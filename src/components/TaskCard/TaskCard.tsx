@@ -18,7 +18,11 @@ export function TaskCard({
 
   return (
     <div className={styles.taskCard}>
-      <input type="checkbox" onClick={() => toggleTask(content)} />
+      <input
+        type="checkbox"
+        checked={conclud}
+        onClick={() => toggleTask(content)}
+      />
       <p className={styles[taskIsConclud]}>{content}</p>
       <div onClick={() => deleteTask(content)}>
         <Trash />
