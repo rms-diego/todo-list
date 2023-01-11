@@ -42,7 +42,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 
 - Ter instalado o nodeJs
-- Verificar se não tem nenhum processo rodando na porta: 5173
+- Verificar se não tem nenhum processo rodando na porta: <strong>5173</strong>
 
 ## 🚀 Instalando Todo List
 
