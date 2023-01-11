@@ -18,12 +18,14 @@
 
   p {
     color: $gray-100;
+    min-width: 39.5rem;
   }
 
   div {
     width: 2rem;
     height: 2rem;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     transition: 200ms;
